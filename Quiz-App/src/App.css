@@ -1,0 +1,70 @@
+﻿* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6 50%, #ec4899);
+  color: #1f2937;
+}
+.app { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.card {
+  width: 100%; max-width: 640px; background: #fff; border-radius: 20px;
+  padding: 2rem; box-shadow: 0 20px 50px rgba(0,0,0,.25);
+  animation: pop .35s ease;
+}
+@keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.98); } }
+.center { text-align: center; }
+.emoji { font-size: 4rem; }
+h1 { margin: .5rem 0; font-size: 1.9rem; }
+.subtitle { color: #6b7280; margin-bottom: 1.5rem; }
+.final-score { font-size: 3rem; font-weight: 700; color: #6366f1; margin: .5rem 0 1.5rem; }
+button { font: inherit; cursor: pointer; border: 0; }
+.primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff;
+  padding: .8rem 1.8rem; border-radius: 999px; font-weight: 600;
+  transition: transform .15s, box-shadow .15s;
+}
+.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(99,102,241,.4); }
+.next { display: block; margin: 1.2rem auto 0; }
+.ghost { display: block; margin: 1.2rem auto 0; background: none; color: #6b7280; text-decoration: underline; }
+.topbar { display: flex; justify-content: space-between; margin-bottom: .8rem; }
+.badge { background: #eef2ff; color: #4f46e5; padding: .3rem .8rem; border-radius: 999px; font-size: .85rem; font-weight: 600; }
+.badge.score { background: #fef3c7; color: #b45309; }
+.progress { height: 8px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.progress-bar { height: 100%; background: linear-gradient(90deg, #6366f1, #ec4899); transition: width .4s; }
+.question { font-size: 1.3rem; margin: 1.5rem 0 1rem; line-height: 1.4; }
+.status { text-align: center; color: #6b7280; margin: 1.5rem 0; }
+.status.error { color: #dc2626; }
+.options { display: grid; gap: .7rem; }
+.option {
+  display: flex; justify-content: space-between; align-items: center; text-align: left;
+  padding: .9rem 1.1rem; background: #f9fafb; color: #1f2937;
+  border: 2px solid #e5e7eb; border-radius: 12px; transition: all .2s;
+}
+.option:not(:disabled):hover { border-color: #6366f1; background: #eef2ff; transform: translateX(4px); }
+.option:disabled { cursor: default; }
+.option.correct { background: #dcfce7; border-color: #22c55e; color: #166534; font-weight: 600; }
+.option.wrong { background: #fee2e2; border-color: #ef4444; color: #991b1b; animation: shake .35s; }
+.option.dimmed { opacity: .55; }
+@keyframes shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.timer { text-align: center; font-weight: 700; font-size: 1.1rem; color: #4f46e5; margin-bottom: .6rem; transition: color .3s; }
+.timer.danger { color: #dc2626; animation: pulse 1s infinite; }
+@keyframes pulse { 50% { transform: scale(1.12); } }
+.save-form { display: flex; gap: .6rem; justify-content: center; margin: 0 0 1.2rem; }
+.save-form input {
+  flex: 1; max-width: 260px; padding: .7rem 1rem; font: inherit;
+  border: 2px solid #e5e7eb; border-radius: 999px; outline: none; transition: border-color .2s, box-shadow .2s;
+}
+.save-form input:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99,102,241,.2); }
+.saved { color: #166534; background: #dcfce7; padding: .6rem 1rem; border-radius: 999px; display: inline-block; font-weight: 600; }
+.ranking { background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 16px; padding: 1rem 1.2rem; margin: 0 0 1.5rem; text-align: left; }
+.ranking h2 { margin: 0 0 .6rem; font-size: 1.2rem; text-align: center; }
+.ranking ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.ranking li { display: flex; align-items: center; gap: .7rem; padding: .5rem .8rem; background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.ranking li:nth-child(1) { background: #fef9c3; }
+.ranking li:nth-child(2) { background: #f1f5f9; }
+.ranking li:nth-child(3) { background: #ffedd5; }
+.ranking .pos { width: 1.8rem; text-align: center; font-weight: 700; color: #6b7280; }
+.ranking .name { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ranking .pts { font-weight: 700; color: #4f46e5; }
+.final-score + .save-form, .center .primary { margin-top: .3rem; }
