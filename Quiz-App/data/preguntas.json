@@ -1,0 +1,350 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál es la unidad de fuerza en el Sistema Internacional?",
+    "opciones": ["Newton", "Joule", "Watt"],
+    "respuestaCorrecta": "Newton"
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué magnitud representa el cambio de posición de un cuerpo respecto del tiempo?",
+    "opciones": ["Velocidad", "Fuerza", "Trabajo"],
+    "respuestaCorrecta": "Velocidad"
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál es la unidad de velocidad en el Sistema Internacional?",
+    "opciones": ["m/s", "m/s²", "km"],
+    "respuestaCorrecta": "m/s"
+  },
+  {
+    "id": 4,
+    "pregunta": "En un Movimiento Rectilíneo Uniforme, la velocidad es:",
+    "opciones": ["Constante", "Creciente", "Nula siempre"],
+    "respuestaCorrecta": "Constante"
+  },
+  {
+    "id": 5,
+    "pregunta": "En un Movimiento Rectilíneo Uniformemente Variado, ¿qué magnitud permanece constante?",
+    "opciones": ["Aceleración", "Velocidad", "Posición"],
+    "respuestaCorrecta": "Aceleración"
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es la unidad de aceleración en el Sistema Internacional?",
+    "opciones": ["m/s²", "m/s", "N"],
+    "respuestaCorrecta": "m/s²"
+  },
+  {
+    "id": 7,
+    "pregunta": "Aproximadamente, ¿cuál es la aceleración de la gravedad en la superficie terrestre?",
+    "opciones": ["9,8 m/s²", "98 m/s²", "0,98 m/s²"],
+    "respuestaCorrecta": "9,8 m/s²"
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué establece la primera ley de Newton?",
+    "opciones": [
+      "Un cuerpo mantiene su estado de reposo o movimiento uniforme si la fuerza neta es cero",
+      "La fuerza es igual a masa por aceleración",
+      "Toda acción produce una reacción igual y opuesta"
+    ],
+    "respuestaCorrecta": "Un cuerpo mantiene su estado de reposo o movimiento uniforme si la fuerza neta es cero"
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál es la expresión matemática de la segunda ley de Newton?",
+    "opciones": ["F = m · a", "F = m / a", "F = a / m"],
+    "respuestaCorrecta": "F = m · a"
+  },
+  {
+    "id": 10,
+    "pregunta": "La tercera ley de Newton establece que:",
+    "opciones": [
+      "A toda acción corresponde una reacción de igual magnitud y sentido contrario",
+      "Todo cuerpo en reposo permanece siempre en reposo",
+      "La energía siempre aumenta"
+    ],
+    "respuestaCorrecta": "A toda acción corresponde una reacción de igual magnitud y sentido contrario"
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué diferencia existe entre masa y peso?",
+    "opciones": [
+      "La masa es cantidad de materia y el peso es una fuerza",
+      "La masa es una fuerza y el peso es energía",
+      "Son exactamente la misma magnitud"
+    ],
+    "respuestaCorrecta": "La masa es cantidad de materia y el peso es una fuerza"
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se calcula el peso de un cuerpo?",
+    "opciones": ["P = m · g", "P = m / g", "P = g / m"],
+    "respuestaCorrecta": "P = m · g"
+  },
+  {
+    "id": 13,
+    "pregunta": "¿En qué unidad se mide el trabajo mecánico?",
+    "opciones": ["Joule", "Newton", "Pascal"],
+    "respuestaCorrecta": "Joule"
+  },
+  {
+    "id": 14,
+    "pregunta": "Cuando una fuerza desplaza un objeto en su misma dirección, el trabajo se calcula como:",
+    "opciones": ["W = F · d", "W = F / d", "W = d / F"],
+    "respuestaCorrecta": "W = F · d"
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué tipo de energía posee un objeto debido a su movimiento?",
+    "opciones": ["Energía cinética", "Energía potencial", "Energía térmica"],
+    "respuestaCorrecta": "Energía cinética"
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es la expresión de la energía cinética?",
+    "opciones": ["Ec = 1/2 · m · v²", "Ec = m · g · h", "Ec = F · d"],
+    "respuestaCorrecta": "Ec = 1/2 · m · v²"
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué energía tiene un cuerpo debido a su altura respecto de un nivel de referencia?",
+    "opciones": ["Energía potencial gravitatoria", "Energía cinética", "Energía eléctrica"],
+    "respuestaCorrecta": "Energía potencial gravitatoria"
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál es la fórmula de la energía potencial gravitatoria?",
+    "opciones": ["Ep = m · g · h", "Ep = 1/2 · m · v²", "Ep = F / d"],
+    "respuestaCorrecta": "Ep = m · g · h"
+  },
+  {
+    "id": 19,
+    "pregunta": "El principio de conservación de la energía establece que:",
+    "opciones": [
+      "La energía no se crea ni se destruye, solo se transforma",
+      "La energía siempre desaparece",
+      "La energía solo puede convertirse en calor"
+    ],
+    "respuestaCorrecta": "La energía no se crea ni se destruye, solo se transforma"
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué magnitud indica la rapidez con la que se realiza un trabajo?",
+    "opciones": ["Potencia", "Fuerza", "Presión"],
+    "respuestaCorrecta": "Potencia"
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es la unidad de potencia en el Sistema Internacional?",
+    "opciones": ["Watt", "Joule", "Newton"],
+    "respuestaCorrecta": "Watt"
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cómo se calcula la potencia media?",
+    "opciones": ["P = W / t", "P = W · t", "P = t / W"],
+    "respuestaCorrecta": "P = W / t"
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué fuerza se opone al movimiento relativo entre dos superficies en contacto?",
+    "opciones": ["Fuerza de rozamiento", "Fuerza gravitatoria", "Fuerza eléctrica"],
+    "respuestaCorrecta": "Fuerza de rozamiento"
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuál es la unidad de presión en el Sistema Internacional?",
+    "opciones": ["Pascal", "Newton", "Watt"],
+    "respuestaCorrecta": "Pascal"
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cómo se calcula la presión ejercida por una fuerza perpendicular sobre una superficie?",
+    "opciones": ["P = F / A", "P = F · A", "P = A / F"],
+    "respuestaCorrecta": "P = F / A"
+  },
+  {
+    "id": 26,
+    "pregunta": "El principio de Pascal establece que una presión aplicada a un fluido encerrado:",
+    "opciones": [
+      "Se transmite por igual en todas las direcciones",
+      "Desaparece inmediatamente",
+      "Solo se transmite hacia abajo"
+    ],
+    "respuestaCorrecta": "Se transmite por igual en todas las direcciones"
+  },
+  {
+    "id": 27,
+    "pregunta": "Según el principio de Arquímedes, un cuerpo sumergido en un fluido experimenta:",
+    "opciones": [
+      "Un empuje hacia arriba",
+      "Una fuerza exclusivamente horizontal",
+      "Una disminución de su masa"
+    ],
+    "respuestaCorrecta": "Un empuje hacia arriba"
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cómo se calcula la densidad de un material?",
+    "opciones": ["ρ = m / V", "ρ = m · V", "ρ = V / m"],
+    "respuestaCorrecta": "ρ = m / V"
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál es la unidad de densidad en el Sistema Internacional?",
+    "opciones": ["kg/m³", "N/m²", "kg·m"],
+    "respuestaCorrecta": "kg/m³"
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué es la temperatura?",
+    "opciones": [
+      "Una magnitud relacionada con la energía cinética promedio de las partículas",
+      "La cantidad total de materia de un cuerpo",
+      "Una medida de la fuerza gravitatoria"
+    ],
+    "respuestaCorrecta": "Una magnitud relacionada con la energía cinética promedio de las partículas"
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué forma de transferencia de calor ocurre principalmente por contacto directo?",
+    "opciones": ["Conducción", "Radiación", "Reflexión"],
+    "respuestaCorrecta": "Conducción"
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué forma de transferencia de calor puede ocurrir en el vacío?",
+    "opciones": ["Radiación", "Conducción", "Convección"],
+    "respuestaCorrecta": "Radiación"
+  },
+  {
+    "id": 33,
+    "pregunta": "La transferencia de calor mediante el movimiento de un fluido se denomina:",
+    "opciones": ["Convección", "Conducción", "Refracción"],
+    "respuestaCorrecta": "Convección"
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuál es la unidad de carga eléctrica en el Sistema Internacional?",
+    "opciones": ["Coulomb", "Volt", "Ampere"],
+    "respuestaCorrecta": "Coulomb"
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué ocurre entre dos cargas eléctricas del mismo signo?",
+    "opciones": ["Se repelen", "Se atraen", "No ejercen ninguna fuerza"],
+    "respuestaCorrecta": "Se repelen"
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué ocurre entre dos cargas eléctricas de signos opuestos?",
+    "opciones": ["Se atraen", "Se repelen", "Pierden su carga"],
+    "respuestaCorrecta": "Se atraen"
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuál es la unidad de intensidad de corriente eléctrica?",
+    "opciones": ["Ampere", "Volt", "Ohm"],
+    "respuestaCorrecta": "Ampere"
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué magnitud eléctrica se mide en volts?",
+    "opciones": ["Diferencia de potencial", "Resistencia", "Corriente"],
+    "respuestaCorrecta": "Diferencia de potencial"
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuál es la unidad de resistencia eléctrica?",
+    "opciones": ["Ohm", "Ampere", "Coulomb"],
+    "respuestaCorrecta": "Ohm"
+  },
+  {
+    "id": 40,
+    "pregunta": "Según la ley de Ohm, la relación entre tensión, corriente y resistencia es:",
+    "opciones": ["V = I · R", "V = I / R", "V = R / I"],
+    "respuestaCorrecta": "V = I · R"
+  },
+  {
+    "id": 41,
+    "pregunta": "En un circuito en serie, la corriente eléctrica:",
+    "opciones": [
+      "Es la misma en todos los componentes",
+      "Es diferente en cada componente",
+      "Siempre es igual a cero"
+    ],
+    "respuestaCorrecta": "Es la misma en todos los componentes"
+  },
+  {
+    "id": 42,
+    "pregunta": "En un circuito en paralelo, la tensión eléctrica:",
+    "opciones": [
+      "Es la misma en cada rama",
+      "Es siempre cero",
+      "Se divide obligatoriamente en partes iguales"
+    ],
+    "respuestaCorrecta": "Es la misma en cada rama"
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué produce una corriente eléctrica alrededor de un conductor?",
+    "opciones": ["Un campo magnético", "Un campo gravitatorio", "Una disminución de masa"],
+    "respuestaCorrecta": "Un campo magnético"
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué polos de dos imanes se atraen entre sí?",
+    "opciones": ["Polos opuestos", "Polos iguales", "Todos los polos se repelen"],
+    "respuestaCorrecta": "Polos opuestos"
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué es una onda?",
+    "opciones": [
+      "Una perturbación que transporta energía",
+      "Un objeto que transporta necesariamente materia",
+      "Una fuerza que actúa únicamente sobre sólidos"
+    ],
+    "respuestaCorrecta": "Una perturbación que transporta energía"
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuál es la unidad de frecuencia?",
+    "opciones": ["Hertz", "Metro", "Segundo"],
+    "respuestaCorrecta": "Hertz"
+  },
+  {
+    "id": 47,
+    "pregunta": "La frecuencia de una onda indica:",
+    "opciones": [
+      "La cantidad de oscilaciones por segundo",
+      "La distancia recorrida en un segundo",
+      "La amplitud máxima de la onda"
+    ],
+    "respuestaCorrecta": "La cantidad de oscilaciones por segundo"
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué fenómeno ocurre cuando la luz cambia de dirección al pasar de un medio a otro?",
+    "opciones": ["Refracción", "Reflexión", "Difusión térmica"],
+    "respuestaCorrecta": "Refracción"
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué fenómeno ocurre cuando la luz rebota sobre una superficie?",
+    "opciones": ["Reflexión", "Refracción", "Convección"],
+    "respuestaCorrecta": "Reflexión"
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es aproximadamente la velocidad de la luz en el vacío?",
+    "opciones": [
+      "3 × 10^8 m/s",
+      "3 × 10^6 m/s",
+      "3 × 10^4 m/s"
+    ],
+    "respuestaCorrecta": "3 × 10^8 m/s"
+  }
+]

@@ -1,5 +1,6 @@
 ﻿import { useState, useEffect } from 'react'
 import './App.css'
+import preguntas from '../data/preguntas.json' 
 
 const decode = (html) => {
   const t = document.createElement('textarea')
@@ -48,12 +49,11 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const response = await fetch('https://opentdb.com/api.php?amount=10&type=multiple')
-      const data = await response.json()
-      if (!Array.isArray(data.results) || data.results.length === 0) {
+      const data = preguntas
+      if (!Array.isArray(data) || data.length === 0) {
         throw new Error('sin resultados')
       }
-      setQuestions(data.results)
+      setQuestions(data)
       setCurrentQuestion(0)
       setScore(0)
       setSelected(null)
@@ -63,6 +63,10 @@ function App() {
       setLoading(false)
     }
   }
+
+  const respuestas = questions[currentQuestion]
+    ? [...questions[currentQuestion].opciones, questions[currentQuestion].respuestaCorrecta].sort()
+    : []
   
   const saveScore = () => {
     const name = playerName.trim()
@@ -87,7 +91,7 @@ function App() {
   const handleAnswer = (option) => {
     if (selected !== null) return
     setSelected(option)
-    if (option === questions[currentQuestion].correct_answer) {
+    if (option === questions[currentQuestion].respuestaCorrecta) {
       setScore((s) => s + timeLeft)
     }
   }
@@ -126,18 +130,7 @@ function App() {
     }
   }
 
-  const question = questions[currentQuestion]
-  const options = question
-    ? [...question.incorrect_answers, question.correct_answer].sort()
-    : []
-
-  const optionClass = (option) => {
-    if (selected === null) return 'option'
-    if (option === question.correct_answer) return 'option correct'
-    if (option === selected) return 'option wrong'
-    return 'option dimmed'
-  }
-
+  
   return (
     <main className="app">
       <div className="card">
