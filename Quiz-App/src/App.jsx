@@ -45,29 +45,20 @@ function App() {
   const [playerName, setPlayerName] = useState('')
   const [saved, setSaved] = useState(false)
 
-  const fetchQuestions = async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const data = preguntas
-      if (!Array.isArray(data) || data.length === 0) {
-        throw new Error('sin resultados')
-      }
-      setQuestions(data)
-      setCurrentQuestion(0)
-      setScore(0)
-      setSelected(null)
-    } catch {
-      setError('Error al cargar las preguntas')
-    } finally {
-      setLoading(false)
-    }
+  //añadir preguntas en la lista question
+  const fetchQuestions = () => {
+    setQuestions(preguntas.sort(() => Math.random() - 0.5).slice(0, 10))
+    console.log(preguntas)
+    setCurrentQuestion(0)
+    setScore(0)
+    setSelected(null)
   }
 
-  const respuestas = questions[currentQuestion]
-    ? [...questions[currentQuestion].opciones, questions[currentQuestion].respuestaCorrecta].sort()
-    : []
-  
+  // añadir opciones para botones
+  const getOptions = (question) => {
+    return [...question.opciones].sort()
+  }
+
   const saveScore = () => {
     const name = playerName.trim()
     if (!name || saved) return
@@ -94,6 +85,7 @@ function App() {
     if (option === questions[currentQuestion].respuestaCorrecta) {
       setScore((s) => s + timeLeft)
     }
+    setTimeout(handleNext, 2000)
   }
 
   // efecto para el temporizador
@@ -122,6 +114,7 @@ function App() {
   const handleNext = () => {
     const next = currentQuestion + 1
     setSelected(null)
+    setTimeout(() => setTimeLeft(30), 0)
     if (next < questions.length) {
       setCurrentQuestion(next)
     } else {
@@ -185,27 +178,40 @@ function App() {
                 />
               </div>
             )}
+            {questions.length > 0 && (
+              <h2 className="question">{questions[currentQuestion].pregunta}</h2>
+            )}
             {loading && <p className="status">Cargando preguntas...</p>}
             {error && <p className="status error">{error}</p>}
-            {question && (
+            { (
               <>
-                <h2 className="question">{decode(question.question)}</h2>
+               
                 <div className="options">
-                  {options.map((option) => (
-                    <button
-                      key={option}
-                      className={optionClass(option)}
-                      disabled={selected !== null}
-                      onClick={() => handleAnswer(option)}
-                    >
-                      <span>{decode(option)}</span>
-                      {selected !== null && option === question.correct_answer && <b>✓</b>}
-                      {selected !== null && option === selected && option !== question.correct_answer && <b>✗</b>}
-                    </button>
-                  ))}
+                  {getOptions(questions[currentQuestion]).map((option) => {
+                    const isCorrect = option === questions[currentQuestion].respuestaCorrecta
+                    const isSelected = selected === option
+                    const resultClass = selected === null
+                      ? ''
+                      : isCorrect
+                        ? 'correct'
+                        : isSelected
+                          ? 'wrong'
+                          : 'dimmed'
+
+                    return (
+                      <button
+                        key={option}
+                        className={`option ${resultClass}`}
+                        disabled={selected !== null}
+                        onClick={() => handleAnswer(option)}
+                      >
+                        {option}
+                      </button>
+                    )
+                  })}
                 </div>
                 {selected !== null && (
-                  <button className="primary next" onClick={handleNext}>
+                  <button className="primary next" onClick={handleNext} >
                     {currentQuestion + 1 < questions.length ? 'Siguiente →' : 'Ver resultado'}
                   </button>
                 )}
