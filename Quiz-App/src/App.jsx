@@ -210,11 +210,7 @@ function App() {
                     )
                   })}
                 </div>
-                {selected !== null && (
-                  <button className="primary next" onClick={handleNext} >
-                    {currentQuestion + 1 < questions.length ? 'Siguiente →' : 'Ver resultado'}
-                  </button>
-                )}
+                
               </>
             )}
             <button className="ghost" onClick={() => setQuizStarted(false)}>Reiniciar Quiz</button>
